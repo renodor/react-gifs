@@ -5,6 +5,8 @@ import Gif from './gif.jsx'
 import SearchBar from './search_bar.jsx'
 import GifList from './gif_list.jsx'
 
+const GIPHY_API_KEY = 'qBENwULSSEhjVVq2xqskDiMnS6NB1u9C'
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -17,7 +19,7 @@ class App extends Component {
   }
 
   search = (query) => {
-    giphy('qBENwULSSEhjVVq2xqskDiMnS6NB1u9C').search({
+    giphy(GIPHY_API_KEY).search({
         q: query,
         rating: 'g',
         limit: 10
