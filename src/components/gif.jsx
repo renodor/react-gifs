@@ -12,6 +12,10 @@ class Gif extends Component {
   }
 
   render() {
+    if (!this.props.id) {
+      return null;
+    }
+
     const src = `https://media.giphy.com/media/${this.props.id}/giphy.gif`
     return (
       <img className='gif' src={src} alt="" onClick={this.handleClick}/>

@@ -14,7 +14,7 @@ class App extends Component {
 
     this.state = {
       gifs: [],
-      selectedGif: 'l0K4eeSXuiJTAx1Ti'
+      selectedGif: null
     }
   }
 
